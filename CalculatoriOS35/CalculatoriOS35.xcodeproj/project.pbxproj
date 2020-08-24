@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		9FB7163724F467A6001DAF19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB7163624F467A6001DAF19 /* AppDelegate.swift */; };
 		9FB7163924F467A6001DAF19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB7163824F467A6001DAF19 /* SceneDelegate.swift */; };
-		9FB7163B24F467A6001DAF19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB7163A24F467A6001DAF19 /* ViewController.swift */; };
 		9FB7163E24F467A6001DAF19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FB7163C24F467A6001DAF19 /* Main.storyboard */; };
 		9FB7164024F467A7001DAF19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FB7163F24F467A7001DAF19 /* Assets.xcassets */; };
 		9FB7164324F467A7001DAF19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FB7164124F467A7001DAF19 /* LaunchScreen.storyboard */; };
+		9FB7165024F469E0001DAF19 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB7164F24F469E0001DAF19 /* CalculatorViewController.swift */; };
+		9FB7165324F47681001DAF19 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FB7165224F47681001DAF19 /* Color.xcassets */; };
+		9FB7165524F4781F001DAF19 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB7165424F4781F001DAF19 /* StyleGuide.swift */; };
+		9FB7165A24F478BE001DAF19 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9FB7165724F478BE001DAF19 /* Lato-Regular.ttf */; };
+		9FB7165B24F478BE001DAF19 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9FB7165824F478BE001DAF19 /* Lato-Light.ttf */; };
+		9FB7165C24F478BE001DAF19 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9FB7165924F478BE001DAF19 /* Lato-Bold.ttf */; };
+		9FB7165E24F479E7001DAF19 /* TipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB7165D24F479E7001DAF19 /* TipButton.swift */; };
+		9FB7166024F47AE2001DAF19 /* CalculatorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB7165F24F47AE2001DAF19 /* CalculatorTextField.swift */; };
+		9FB7166224F47E3A001DAF19 /* TipLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB7166124F47E3A001DAF19 /* TipLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9FB7163324F467A6001DAF19 /* CalculatoriOS35.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatoriOS35.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB7163624F467A6001DAF19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FB7163824F467A6001DAF19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9FB7163A24F467A6001DAF19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9FB7163D24F467A6001DAF19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FB7163F24F467A7001DAF19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FB7164224F467A7001DAF19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FB7164424F467A7001DAF19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FB7164F24F469E0001DAF19 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		9FB7165224F47681001DAF19 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		9FB7165424F4781F001DAF19 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
+		9FB7165724F478BE001DAF19 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		9FB7165824F478BE001DAF19 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		9FB7165924F478BE001DAF19 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		9FB7165D24F479E7001DAF19 /* TipButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipButton.swift; sourceTree = "<group>"; };
+		9FB7165F24F47AE2001DAF19 /* CalculatorTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTextField.swift; sourceTree = "<group>"; };
+		9FB7166124F47E3A001DAF19 /* TipLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,63 @@
 		9FB7163524F467A6001DAF19 /* CalculatoriOS35 */ = {
 			isa = PBXGroup;
 			children = (
+				9FB7163C24F467A6001DAF19 /* Main.storyboard */,
+				9FB7165124F4765D001DAF19 /* CustomUI */,
+				9FB7164C24F467FE001DAF19 /* Controllers */,
+				9FB7164A24F467CA001DAF19 /* Resources */,
+			);
+			path = CalculatoriOS35;
+			sourceTree = "<group>";
+		};
+		9FB7164A24F467CA001DAF19 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9FB7165624F478A5001DAF19 /* Fonts */,
 				9FB7163624F467A6001DAF19 /* AppDelegate.swift */,
 				9FB7163824F467A6001DAF19 /* SceneDelegate.swift */,
-				9FB7163A24F467A6001DAF19 /* ViewController.swift */,
-				9FB7163C24F467A6001DAF19 /* Main.storyboard */,
 				9FB7163F24F467A7001DAF19 /* Assets.xcassets */,
+				9FB7165224F47681001DAF19 /* Color.xcassets */,
 				9FB7164124F467A7001DAF19 /* LaunchScreen.storyboard */,
 				9FB7164424F467A7001DAF19 /* Info.plist */,
 			);
-			path = CalculatoriOS35;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9FB7164C24F467FE001DAF19 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9FB7164E24F469C1001DAF19 /* ViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9FB7164E24F469C1001DAF19 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9FB7164F24F469E0001DAF19 /* CalculatorViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9FB7165124F4765D001DAF19 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				9FB7165424F4781F001DAF19 /* StyleGuide.swift */,
+				9FB7165D24F479E7001DAF19 /* TipButton.swift */,
+				9FB7165F24F47AE2001DAF19 /* CalculatorTextField.swift */,
+				9FB7166124F47E3A001DAF19 /* TipLabel.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		9FB7165624F478A5001DAF19 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9FB7165924F478BE001DAF19 /* Lato-Bold.ttf */,
+				9FB7165824F478BE001DAF19 /* Lato-Light.ttf */,
+				9FB7165724F478BE001DAF19 /* Lato-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +189,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB7165C24F478BE001DAF19 /* Lato-Bold.ttf in Resources */,
 				9FB7164324F467A7001DAF19 /* LaunchScreen.storyboard in Resources */,
+				9FB7165324F47681001DAF19 /* Color.xcassets in Resources */,
+				9FB7165A24F478BE001DAF19 /* Lato-Regular.ttf in Resources */,
+				9FB7165B24F478BE001DAF19 /* Lato-Light.ttf in Resources */,
 				9FB7164024F467A7001DAF19 /* Assets.xcassets in Resources */,
 				9FB7163E24F467A6001DAF19 /* Main.storyboard in Resources */,
 			);
@@ -138,8 +206,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FB7163B24F467A6001DAF19 /* ViewController.swift in Sources */,
 				9FB7163724F467A6001DAF19 /* AppDelegate.swift in Sources */,
+				9FB7165024F469E0001DAF19 /* CalculatorViewController.swift in Sources */,
+				9FB7165E24F479E7001DAF19 /* TipButton.swift in Sources */,
+				9FB7166024F47AE2001DAF19 /* CalculatorTextField.swift in Sources */,
+				9FB7166224F47E3A001DAF19 /* TipLabel.swift in Sources */,
+				9FB7165524F4781F001DAF19 /* StyleGuide.swift in Sources */,
 				9FB7163924F467A6001DAF19 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W526HH7467;
-				INFOPLIST_FILE = CalculatoriOS35/Info.plist;
+				INFOPLIST_FILE = CalculatoriOS35/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +376,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W526HH7467;
-				INFOPLIST_FILE = CalculatoriOS35/Info.plist;
+				INFOPLIST_FILE = CalculatoriOS35/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

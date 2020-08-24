@@ -9,22 +9,75 @@
 import UIKit
 
 class CalculatorViewController: UIViewController {
-
+    //MARK: - Outlets
+    @IBOutlet weak var amountTextField: UITextField!
+    @IBOutlet weak var tipCalculationLabel: UILabel!
+    @IBOutlet weak var totalAmountLabel: UILabel!
+    
+    @IBOutlet weak var tenPercentButton: UIButton!
+    @IBOutlet weak var fifteenPercentButton: UIButton!
+    @IBOutlet weak var twentyPercentButton: UIButton!
+    
+    
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        setUpViews()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK: - Actions
+    @IBAction func tenPercentButtonTapped(_ sender: Any) {
+        tenPercent()
     }
-    */
+    @IBAction func fifteenPercentButtonTapped(_ sender: Any) {
+        fifteenPercent()
+    }
+    @IBAction func twentyPercentButtonTapped(_ sender: Any) {
+        twentyPercent()
+    }
+    
+    
+    func tenPercent() {
+        let amount = Double(amountTextField.text!) ?? 0
+        let tip = amount * 0.1
+        let totalAmount = tip + amount
+        
+        tipCalculationLabel.text = "$\(tip)"
+        totalAmountLabel.text = "$\(totalAmount)"
+        
+        tipCalculationLabel.text = String(format: "$%.2f", tip)
+        totalAmountLabel.text = String(format: "$%.2f", totalAmount)
+    }
+    
+    func fifteenPercent() {
+        let amount = Double(amountTextField.text!) ?? 0
+        let tip = amount * 0.15
+        let totalAmount = tip + amount
+        
+        tipCalculationLabel.text = "$\(tip)"
+        totalAmountLabel.text = "$\(totalAmount)"
+        
+        tipCalculationLabel.text = String(format: "$%.2f", tip)
+        totalAmountLabel.text = String(format: "$%.2f", totalAmount)
+    }
+    
+    func twentyPercent() {
+        let amount = Double(amountTextField.text!) ?? 0
+        let tip = amount * 0.2
+        let totalAmount = tip + amount
+        
+        tipCalculationLabel.text = "$\(tip)"
+        totalAmountLabel.text = "$\(totalAmount)"
+        
+        tipCalculationLabel.text = String(format: "$%.2f", tip)
+        totalAmountLabel.text = String(format: "$%.2f", totalAmount)
+    }
+    
+    func setUpViews() {
+        
+        self.view.backgroundColor = .backgroundColor
+        
+    }
 
-}
+}//End of Class

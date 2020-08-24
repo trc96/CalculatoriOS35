@@ -1,24 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LlV-f3-kZ2">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Calculator View Controller-->
+        <scene sceneID="OB6-I6-Ydw">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="LlV-f3-kZ2" customClass="CalculatorViewController" customModule="CalculatoriOS35" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8DW-GZ-gN9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="VTQ-Le-alP">
+                                <rect key="frame" x="47" y="136" width="281" height="350"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Amount Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wbh-Li-3ii" customClass="CalculatorTextField" customModule="CalculatoriOS35" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="281" height="65"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="RHF-Xv-eO2">
+                                        <rect key="frame" x="0.0" y="95" width="281" height="65"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5L-Kz-l6q" customClass="TipButton" customModule="CalculatoriOS35" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="55" height="65"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="10%"/>
+                                                <connections>
+                                                    <action selector="tenPercentButtonTapped:" destination="LlV-f3-kZ2" eventType="touchUpInside" id="QEQ-id-uq3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhn-aS-oWq" customClass="TipButton" customModule="CalculatoriOS35" customModuleProvider="target">
+                                                <rect key="frame" x="113" y="0.0" width="55" height="65"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="15%"/>
+                                                <connections>
+                                                    <action selector="fifteenPercentButtonTapped:" destination="LlV-f3-kZ2" eventType="touchUpInside" id="cvJ-vq-KXi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIG-OU-P5C" customClass="TipButton" customModule="CalculatoriOS35" customModuleProvider="target">
+                                                <rect key="frame" x="226" y="0.0" width="55" height="65"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="20%"/>
+                                                <connections>
+                                                    <action selector="twentyPercentButtonTapped:" destination="LlV-f3-kZ2" eventType="touchUpInside" id="SlV-bo-4xi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFI-tc-4g9" customClass="TipLabel" customModule="CalculatoriOS35" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="190" width="281" height="65"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THY-mJ-CgR" customClass="TipLabel" customModule="CalculatoriOS35" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="285" width="281" height="65"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RHF-Xv-eO2" firstAttribute="centerX" secondItem="VTQ-Le-alP" secondAttribute="centerX" id="Lwk-DY-xbC"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VTQ-Le-alP" firstAttribute="centerY" secondItem="VEx-Um-ayY" secondAttribute="centerY" constant="-100" id="K5F-rD-VMy"/>
+                            <constraint firstItem="VTQ-Le-alP" firstAttribute="width" secondItem="8DW-GZ-gN9" secondAttribute="width" multiplier="0.75" id="jya-5M-xBf"/>
+                            <constraint firstItem="VTQ-Le-alP" firstAttribute="centerX" secondItem="VEx-Um-ayY" secondAttribute="centerX" id="xiw-xQ-Rlj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VEx-Um-ayY"/>
                     </view>
+                    <connections>
+                        <outlet property="amountTextField" destination="Wbh-Li-3ii" id="LB9-cm-8s7"/>
+                        <outlet property="fifteenPercentButton" destination="xhn-aS-oWq" id="Pmf-Dt-jOW"/>
+                        <outlet property="tenPercentButton" destination="p5L-Kz-l6q" id="zNU-o9-sQF"/>
+                        <outlet property="tipCalculationLabel" destination="cFI-tc-4g9" id="2u1-iJ-61D"/>
+                        <outlet property="totalAmountLabel" destination="THY-mJ-CgR" id="Zia-ss-99F"/>
+                        <outlet property="twentyPercentButton" destination="sIG-OU-P5C" id="Fob-LL-ZEY"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="usf-Yc-Daq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="90" y="147"/>
         </scene>
     </scenes>
 </document>
